@@ -11,15 +11,6 @@ Scripture references generally follow standard conventions for citing the Bible.
 
  - This scripture reference parser executes in a JavaScript envrionment.  (Both NodeJS and major browsers supported)
 
-## Installing
-
-### NPM Installation
-Coming soon.
-### Minified Installation
-Coming soon.
-### Manual Installation
-Coming soon.
-
 ## INPUT—Supported Reference Types
 |**Reference Type**|**Example**  |
 |--|--|
@@ -44,9 +35,9 @@ Coming soon.
 | Abbreviation detection | Mt 2.5; Mk 3; Lk 4; Jn 5.2-6; 1 Jn1.5,7-8; 3 Jn1.1 |
 
 ###  Example
-A scripture reference `string` is passed into the `scripture` object’s `lookup()` function like this:
+A scripture reference `string` is passed into the `scripture` object’s `lookupReference()` function like this:
 ```js
-let results = scripture.lookup('Ex 20.5,10');
+let results = scripture.lookupReference('Ex 20.5,10');
 ```
 
 ## OUTPUT—Verse IDs
@@ -118,8 +109,3 @@ Following this structure, the verse_ids corresponding to each book, chapter and 
 ## Authors
 
 * **KC Kern** - *Initial work* - [kckern](https://github.com/kckern)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
